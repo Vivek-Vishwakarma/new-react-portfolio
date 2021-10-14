@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/new-react-portfolio/static/css/main.1299eb73.chunk.css",
+    "main.js": "/new-react-portfolio/static/js/main.62c38af7.chunk.js",
+    "main.js.map": "/new-react-portfolio/static/js/main.62c38af7.chunk.js.map",
+    "runtime-main.js": "/new-react-portfolio/static/js/runtime-main.a5a3f262.js",
+    "runtime-main.js.map": "/new-react-portfolio/static/js/runtime-main.a5a3f262.js.map",
+    "static/js/2.a87895d0.chunk.js": "/new-react-portfolio/static/js/2.a87895d0.chunk.js",
+    "static/js/2.a87895d0.chunk.js.map": "/new-react-portfolio/static/js/2.a87895d0.chunk.js.map",
+    "index.html": "/new-react-portfolio/index.html",
+    "static/css/main.1299eb73.chunk.css.map": "/new-react-portfolio/static/css/main.1299eb73.chunk.css.map",
+    "static/js/2.a87895d0.chunk.js.LICENSE.txt": "/new-react-portfolio/static/js/2.a87895d0.chunk.js.LICENSE.txt",
+    "static/media/about.defc7995.PNG": "/new-react-portfolio/static/media/about.defc7995.PNG",
+    "static/media/bg.6f8f9dad.svg": "/new-react-portfolio/static/media/bg.6f8f9dad.svg",
+    "static/media/c++.png": "/new-react-portfolio/static/media/c++.666af1b3.png",
+    "static/media/c.png": "/new-react-portfolio/static/media/c.867c839c.png",
+    "static/media/calc.PNG": "/new-react-portfolio/static/media/calc.aeacb80d.PNG",
+    "static/media/clock.PNG": "/new-react-portfolio/static/media/clock.c1d8089b.PNG",
+    "static/media/html.png": "/new-react-portfolio/static/media/html.ff3cf75e.png",
+    "static/media/js.png": "/new-react-portfolio/static/media/js.5a908e0c.png",
+    "static/media/logo.77d087b6.PNG": "/new-react-portfolio/static/media/logo.77d087b6.PNG",
+    "static/media/me.586a0310.png": "/new-react-portfolio/static/media/me.586a0310.png",
+    "static/media/ms.png": "/new-react-portfolio/static/media/ms.5a974e9f.png",
+    "static/media/music.PNG": "/new-react-portfolio/static/media/music.1e8848dd.PNG",
+    "static/media/newsApp.png": "/new-react-portfolio/static/media/newsApp.f4d5eb1e.png",
+    "static/media/notes.PNG": "/new-react-portfolio/static/media/notes.97374028.PNG",
+    "static/media/py.png": "/new-react-portfolio/static/media/py.006dfbe3.png",
+    "static/media/rps.PNG": "/new-react-portfolio/static/media/rps.967d15d4.PNG",
+    "static/media/tictactoe.png": "/new-react-portfolio/static/media/tictactoe.25d29cbf.png",
+    "static/media/todo.PNG": "/new-react-portfolio/static/media/todo.0e1f3803.PNG",
+    "static/media/weather.PNG": "/new-react-portfolio/static/media/weather.42ad1e86.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5a3f262.js",
+    "static/js/2.a87895d0.chunk.js",
+    "static/css/main.1299eb73.chunk.css",
+    "static/js/main.62c38af7.chunk.js"
+  ]
+}
