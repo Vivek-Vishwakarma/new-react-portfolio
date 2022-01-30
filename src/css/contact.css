@@ -1,0 +1,63 @@
+.contactBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: left;
+  width: 60vw;
+  margin: 10px auto;
+}
+.contactBox label {
+  font-weight: bold;
+  font-size: 17px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.contactBox input {
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  width: 400px;
+  transition: width 0.4s;
+  padding: 7px 10px;
+  border-bottom: 1px solid black;
+}
+.contactBox textarea {
+  font-weight: bold;
+  border-radius: 15px;
+
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+}
+.contactBox input:focus {
+  width: 100%;
+  transition: width 0.4s;
+  border-bottom: 2px solid hsl(240, 100%, 60%);
+}
+
+@media only screen and (max-width: 800px) {
+    .contactBox{
+        margin:10px 50px;
+    }
+    .contactBox input {
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      outline: none;
+      width: 270px;
+      transition: width 0.4s;
+      padding: 7px 10px;
+      border-bottom: 1px solid black;
+    }
+    .contactBox textarea {
+      font-weight: bold;
+      width: 270px;
+      font-size: 16px;
+      outline: none;
+      padding: 7px 10px;
+    }
+}

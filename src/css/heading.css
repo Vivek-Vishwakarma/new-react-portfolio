@@ -1,0 +1,30 @@
+.heading {
+    background: #121FCF;
+    background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+.heading::before{
+    content: '';
+    width: 50px;
+    height: 7px;
+    background: rgb(0, 0, 255);
+    position: absolute;
+    transform: translateY(20px) translateX(-55px);
+    border-radius: 30px;
+}
+.heading::after{
+    content: '';
+    width: 50px;
+    height: 7px;
+    background: red;
+    position: absolute;
+    transform: translateY(20px) translateX(5px);
+    border-radius: 30px;
+}

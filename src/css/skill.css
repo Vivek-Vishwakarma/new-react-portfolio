@@ -1,0 +1,39 @@
+.progress-bar{
+    background: white;
+}
+.skillDiv{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 20px 250px;
+}
+.innerSkill h3{
+    text-align: center;
+    color: hsl(0, 0%, 50%);
+    font-weight: bolder;
+}
+.innerSkill{
+    margin:10px 20px;
+}
+.sdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 400px;
+}
+.simg{
+    width: 100px;
+    margin: 20px;
+}
+@media only screen and (max-width: 750px){
+    .skillDiv{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 10px;
+    }
+    .sdiv{
+        margin: 10px;
+    }
+}

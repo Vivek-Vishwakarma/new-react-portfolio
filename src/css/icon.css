@@ -1,0 +1,19 @@
+i{
+    margin: 5px;
+    transition: transform 0.3s;
+}
+i:hover{
+    color: hsl(0, 0%, 20%);
+    transition: background 0.4s ease-in-out;   
+    transform: translateY(-10px);
+    transition: transform 0.3s;
+}
+a{
+    color: hsl(0deg 0% 30%);
+    text-decoration: none;
+}
+.icons{
+display: flex;
+justify-content: center;
+margin:5px auto;
+} 
