@@ -1,15 +1,13 @@
 import React from "react";
 import "../css/nav.css";
 import logo from "../images/logo.PNG";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import DarkModeToggle from "react-dark-mode-toggle";
 
-const Navbar = ({isDarkMode, setIsDarkMode}) => {
-
+const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const toggleNav = () => {
     const navtoggle = document.querySelector(".nav");
     navtoggle.classList.toggle("new");
-    console.log("click");
   };
   return (
     <>
@@ -22,60 +20,69 @@ const Navbar = ({isDarkMode, setIsDarkMode}) => {
             <div className="nav-responsive">
               <ul className="nav">
                 <li>
-                  <NavLink
-                    activeClassName="active"
-                    exact
+                  <Link
+                    activeClass="active"
                     className="nav-links"
-                    to="/new-react-portfolio"
+                    spy={true}
+                    offset={-180}
+                    to="home"
                   >
                     Home
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink
-                    activeClassName="active"
-                    exact
+                  <Link
+                    spy={true}
+                    offset={-180}
+                    activeClass="active"
                     className="nav-links"
-                    to="/about"
+                    to="about"
                   >
                     About
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink
-                    activeClassName="active"
-                    exact
+                  <Link
+                    activeClass="active"
+                    spy={true}
+                    offset={-180}
                     className="nav-links"
-                    to="/skills"
+                    to="skills"
                   >
                     Skills
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink
-                    activeClassName="active"
-                    exact
+                  <Link
+                    activeClass="active"
                     className="nav-links"
-                    to="/projects"
+                    spy={true}
+                    offset={-180}
+                    to="projects"
                   >
                     Projects
-                  </NavLink>
+                  </Link>
                 </li>
                 <li>
-                  <NavLink
-                    activeClassName="active"
-                    exact
+                  <Link
+                    activeClass="active"
+                    spy={true}
+                    offset={-180}
                     className="nav-links"
-                    to="/contact"
+                    to="contact"
                   >
                     Contact
-                  </NavLink>
+                  </Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="logo">
-            <DarkModeToggle onChange={setIsDarkMode} checked={isDarkMode} size={60}/>
+            <DarkModeToggle
+              onChange={setIsDarkMode}
+              checked={isDarkMode}
+              size={60}
+            />
             <h2 className="arrow">&#8594;</h2>
             <img
               src={logo}

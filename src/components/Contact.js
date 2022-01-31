@@ -30,7 +30,7 @@ const Contact = ({user, template, service}) => {
   return (
     <>
       <Heading heading={"Contact Me"} />
-      <div className="contactBox">
+      <div id="contact" className="contactBox">
         <form ref={form} onSubmit={sendEmail} autoComplete="off">
           <label>Name : </label>
           <input

@@ -11,7 +11,7 @@ const Projects = ({isDarkMode}) => {
     <>
       <Heading heading={"Projects"} />
       <ScrollToTop smooth />
-      <div className="container">
+      <div id="projects"  className="container">
         <div className="card" style={{ width: "350px"}}>
           <img
             src={require("../images/newsApp.png").default}

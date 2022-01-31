@@ -17,7 +17,7 @@ const Skills = ({isDarkMode}) => {
     
       <Heading heading={"Skills"} />
 
-      <div className="sdiv">
+      <div id="skills" className="sdiv">
         <img
           className="simg"
           src={require("../images/html.png").default}

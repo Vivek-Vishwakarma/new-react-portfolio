@@ -9,7 +9,7 @@ const Header = ({isDarkMode}) => {
   return (
     <>
       <section>
-        <div className="header">
+        <div id="home" className="header">
           <div className="info">
             <h3>Hey There !</h3>
             <h1>I'm Vivek Vishwakarma</h1>
