@@ -64,8 +64,13 @@ const Skills = ({isDarkMode}) => {
           src={require("../images/ms.png").default}
           alt=""
         />
+        <img
+          className="simg"
+          src={require("../images/mongo.png").default}
+          alt=""
+        />
       </div>
-      <div className="skillDiv">
+      {/* <div className="skillDiv">
         
         <div className="innerSkill">
           <h3>Html</h3>
@@ -130,7 +135,7 @@ const Skills = ({isDarkMode}) => {
             percentage="45"
           />
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
