@@ -1,20 +1,26 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Heading from "./Heading";
 import ScrollToTop from "react-scroll-to-top";
 import "../css/project.css";
-import Rotate from 'react-reveal/Rotate';
+import AOS from 'aos';
 
+// import "aos/dist/aos.css";
 const Projects = ({isDarkMode}) => {
   document.querySelectorAll(".card").forEach(element => {
     element.style.background = isDarkMode ? "black" : "white"
   })
+  useEffect(() => {
+    AOS.init({duration : 2000})
+
+  }, [])
+  
   return (
     <>
       <Heading heading={"Projects"} />
       <ScrollToTop smooth />
       <div id="projects"  className="container">
-      <Rotate bottom left>
-      <div className="card">
+   
+      <div data-aos="fade-right" className="card">
           <img
             src={require("../images/vflix.png").default}
             className="card-img-top"
@@ -24,7 +30,7 @@ const Projects = ({isDarkMode}) => {
             <h5 className="card-title">Vflix</h5>
             <p className="tech">JavaScript, React, API, Material UI</p>
             <p className="card-text">
-              This is Vflix a movie db app. This fetch data from TMDB API and show the results. App have feature filter, pagination, responsive design, search, etc. I also made app version of this website using react native <a style={{margin : 0, padding : 0, color: "#0d6efd"}} href="https://github.com/Vivek-Vishwakarma/react-native-vflix" target="_blank">click here to check the github repo.</a>
+              This is Vflix a movie db app. This fetch data from TMDB API and show the results. App have feature filter, pagination, responsive design, search, etc. I also made app version of this website using react native <a style={{margin : 0, padding : 0, color: "#0d6efd"}} href="https://github.com/Vivek-Vishwakarma/react-native-vflix" rel="noreferrer" target="_blank">click here to check the github repo.</a>
             </p>
             <a
               href="https://github.com/Vivek-Vishwakarma/vflix"
@@ -44,7 +50,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card">
+        <div data-aos="fade-up" className="card">
           <img
             src={require("../images/dictionary.png").default}
             className="card-img-top"
@@ -74,7 +80,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card">
+        <div data-aos="fade-left" className="card">
           <img
             src={require("../images/newsApp.png").default}
             className="card-img-top"
@@ -106,9 +112,8 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        </Rotate>
-      <Rotate bottom right>
-        <div className="card"  >
+
+        <div data-aos="fade-left" className="card"  >
           <img
             src={require("../images/tictactoe.png").default}
             className="card-img-top"
@@ -140,7 +145,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div className="card"  >
+        <div data-aos="fade-down" className="card"  >
           <img
             src={require("../images/music.PNG").default}
             className="card-img-top"
@@ -172,7 +177,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card"  >
+        <div data-aos="fade-right" className="card"  >
           <img
             src={require("../images/weather.PNG").default}
             className="card-img-top"
@@ -203,10 +208,9 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        </Rotate>
-      <Rotate bottom left>
+ 
 
-        <div className="card"  >
+        <div data-aos="fade-up" className="card"  >
           <img
             src={require("../images/rps.PNG").default}
             className="card-img-top"
@@ -238,7 +242,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div className="card"  >
+        <div data-aos="fade-left" className="card"  >
           <img
             src={require("../images/notes.PNG").default}
             className="card-img-top"
@@ -269,7 +273,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card"  >
+        <div data-aos="flip-right" className="card"  >
           <img
             src={require("../images/calc.PNG").default}
             className="card-img-top"
@@ -300,10 +304,9 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        </Rotate>
-        <Rotate bottom right>
 
-        <div className="card"  >
+
+        <div data-aos="flip-left"  className="card"  >
           <img
             src={require("../images/todo.PNG").default}
             className="card-img-top"
@@ -335,7 +338,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div className="card"  >
+        <div data-aos="fade-right"  className="card"  >
           <img
             src={require("../images/clock.PNG").default}
             className="card-img-top"
@@ -366,7 +369,6 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        </Rotate>
       </div>
     </>
   );

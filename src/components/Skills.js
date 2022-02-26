@@ -1,7 +1,7 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Heading from "./Heading";
 import "../css/skill.css";
-
+import AOS from 'aos';
 const Skills = ({isDarkMode}) => {
   document.querySelectorAll('.progress-bar').forEach(element => {
     element.style.background = isDarkMode ? "black" : "white"
@@ -11,6 +11,10 @@ const Skills = ({isDarkMode}) => {
     element.style.color = isDarkMode ? "white" : "black"
     
   })
+  useEffect(() => {
+    AOS.init({duration : 2000})
+  }, [])
+  
   return (
     <>
     
@@ -18,52 +22,62 @@ const Skills = ({isDarkMode}) => {
 
       <div id="skills" className="sdiv">
         <img
+        data-aos="fade-up"
           className="simg"
           src={require("../images/html.png").default}
           alt=""
         />
         <img
+        data-aos="fade-down"
           className="simg"
           src={require("../images/css.png").default}
           alt=""
         />
         <img
+        data-aos="fade-right"
           className="simg"
           src={require("../images/js.png").default}
           alt=""
         />
         <img
+         data-aos="fade-left"
           className="simg"
           src={require("../images/c++.png").default}
           alt=""
         />
         <img
+        data-aos="fade-up-right"
           className="simg"
           src={require("../images/bootstrap.png").default}
           alt=""
         />
         <img
+        data-aos="fade-up-left"
           className="simg"
           src={require("../images/py.png").default}
           alt=""
         />
         <img
+        data-aos="fade-down-right"
           className="simg"
           src={require("../images/react.png").default}
           alt=""
         />
-        <img className="simg" src={require("../images/c.png").default} alt="" />
+        <img data-aos="fade-down-left" className="simg" src={require("../images/c.png").default} alt="" />
         <img
+        data-aos="flip-left"
           className="simg"
           src={require("../images/ps.png").default}
           alt=""
         />
         <img
+        data-aos="flip-right"
           className="simg"
           src={require("../images/ms.png").default}
           alt=""
         />
         <img
+        data-aos="flip-up"
           className="simg"
           src={require("../images/mongo.png").default}
           alt=""

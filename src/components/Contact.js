@@ -1,8 +1,9 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import Button from "./Button";
 import emailjs from "emailjs-com";
 import Heading from "./Heading";
 import "../css/contact.css";
+import AOS from 'aos';
 const Contact = ({user, template, service}) => {
   const form = useRef();
 
@@ -27,10 +28,14 @@ const Contact = ({user, template, service}) => {
         }
       );
   };
+  useEffect(() => {
+    AOS.init({duration : 2000})
+  }, [])
+  
   return (
     <>
       <Heading heading={"Contact Me"} />
-      <div id="contact" className="contactBox">
+      <div data-aos="zoom-out" id="contact" className="contactBox">
         <form ref={form} onSubmit={sendEmail} autoComplete="off">
           <label>Name : </label>
           <input

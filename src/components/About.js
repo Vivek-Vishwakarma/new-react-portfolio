@@ -1,23 +1,29 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import Heading from './Heading'
 import me from "../images/me.png"
 import "../css/about.css"
 import Button from './Button'
 import about from '../images/about.PNG'
+import AOS from 'aos';
 const About = () => {
+    useEffect(() => {
+        AOS.init({duration : 2000})
+    
+      }, [])
+      
     return (
         <>
             <Heading heading={"About Me"}/>
             
             <div id="about" className="about">
-                <div className="about-image">
+                <div data-aos="zoom-in-up" className="about-image">
                     <img src={me} alt="profile" />
                 </div>
                 <div className="about-text">
-                    <h2>Student at Atharva College Of Engineering</h2>
-                    <p>Prefinal (2019 - 2023) EXTC branch. <br /> HSC form TP Bhatia College Of Science.</p>
+                    <h2 data-aos="fade-left">Student at Atharva College Of Engineering</h2>
+                    <p data-aos="fade-right">Prefinal (2019 - 2023) EXTC branch. <br /> HSC form TP Bhatia College Of Science.</p>
                     <Button url="https://www.canva.com/design/DAElGBKBrs8/hbZaJk8xts0L27Yr2ePl0w/view?utm_content=DAElGBKBrs8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" text="Resume &darr;"/>
-                <div className="info">
+                <div data-aos="flip-left" className="info">
                 <ul>
                     <li>
                         <p><i className="fas fa-arrow-right"></i><strong> Date Of Birth : </strong>10/02/2002</p>
@@ -44,7 +50,7 @@ const About = () => {
                 </div>
                 
             </div>
-            <img src={about} alt="" className="video" />
+            <img data-aos="flip-right" src={about} alt="" className="video" />
         
         </>
     )
