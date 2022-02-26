@@ -2,6 +2,7 @@ import React from "react";
 import Heading from "./Heading";
 import ScrollToTop from "react-scroll-to-top";
 import "../css/project.css";
+import Rotate from 'react-reveal/Rotate';
 
 const Projects = ({isDarkMode}) => {
   document.querySelectorAll(".card").forEach(element => {
@@ -12,7 +13,68 @@ const Projects = ({isDarkMode}) => {
       <Heading heading={"Projects"} />
       <ScrollToTop smooth />
       <div id="projects"  className="container">
-        <div className="card" style={{ width: "350px"}}>
+      <Rotate bottom left>
+      <div className="card">
+          <img
+            src={require("../images/vflix.png").default}
+            className="card-img-top"
+            alt="..."
+          />
+          <div className="card-body text-center">
+            <h5 className="card-title">Vflix</h5>
+            <p className="tech">JavaScript, React, API, Material UI</p>
+            <p className="card-text">
+              This is Vflix a movie db app. This fetch data from TMDB API and show the results. App have feature filter, pagination, responsive design, search, etc. I also made app version of this website using react native <a style={{margin : 0, padding : 0, color: "#0d6efd"}} href="https://github.com/Vivek-Vishwakarma/react-native-vflix" target="_blank">click here to check the github repo.</a>
+            </p>
+            <a
+              href="https://github.com/Vivek-Vishwakarma/vflix"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-success"
+            >
+              Github
+            </a>
+            <a
+              href="https://vivek-vishwakarma.github.io/vflix/"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-primary"
+            >
+              View
+            </a>
+          </div>
+        </div>
+        <div className="card">
+          <img
+            src={require("../images/dictionary.png").default}
+            className="card-img-top"
+            alt="..."
+          />
+          <div className="card-body text-center">
+            <h5 className="card-title">React-Dictionary</h5>
+            <p className="tech">JavaScript, React, API, CSS</p>
+            <p className="card-text">
+              Dictionary all to find meaning of words. I have also added pronouncation of the words. It don't have meaning and pronouncation of all words.
+            </p>
+            <a
+              href="https://github.com/Vivek-Vishwakarma/react-dictionary"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-success"
+            >
+              Github
+            </a>
+            <a
+              href="https://vivek-vishwakarma.github.io/react-dictionary/"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-primary"
+            >
+              View
+            </a>
+          </div>
+        </div>
+        <div className="card">
           <img
             src={require("../images/newsApp.png").default}
             className="card-img-top"
@@ -35,47 +97,18 @@ const Projects = ({isDarkMode}) => {
               Github
             </a>
             <a
-              href="https://www.linkedin.com/posts/vivek-vishwakarma-2172a519b_javascript-reactjs-html-activity-6844572450034868224-JeFg"
+              href="https://vivek-vishwakarma.github.io/news-app-react/"
               rel="noreferrer"
               target="_blank"
               className="btn btn-primary"
             >
-              Video
+              View
             </a>
           </div>
         </div>
-        <div className="card" style={{ width: "350px" }}>
-          <img
-            src={require("../images/newsApp.png").default}
-            className="card-img-top"
-            alt="..."
-          />
-          <div className="card-body text-center">
-            <h5 className="card-title">Chatting App</h5>
-            <p className="tech">JavaScript, Socketio, HTML, CSS</p>
-            <p className="card-text">
-              This is basic chatting app which use socketio to connect 2 clients
-              at same time.
-            </p>
-            <a
-              href="https://github.com/Vivek-Vishwakarma/Chat-App-V3"
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-success"
-            >
-              Github
-            </a>
-            <a
-              href="https://www.linkedin.com/posts/vivek-vishwakarma-2172a519b_javascript-reactjs-html-activity-6844572450034868224-JeFg"
-              rel="noreferrer"
-              target="_blank"
-              className="btn btn-primary"
-            >
-              Video
-            </a>
-          </div>
-        </div>
-        <div className="card" style={{ width: "350px" }}>
+        </Rotate>
+      <Rotate bottom right>
+        <div className="card"  >
           <img
             src={require("../images/tictactoe.png").default}
             className="card-img-top"
@@ -107,7 +140,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div className="card" style={{ width: "350px" }}>
+        <div className="card"  >
           <img
             src={require("../images/music.PNG").default}
             className="card-img-top"
@@ -139,7 +172,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card" style={{ width: "350px" }}>
+        <div className="card"  >
           <img
             src={require("../images/weather.PNG").default}
             className="card-img-top"
@@ -170,7 +203,10 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card" style={{ width: "350px" }}>
+        </Rotate>
+      <Rotate bottom left>
+
+        <div className="card"  >
           <img
             src={require("../images/rps.PNG").default}
             className="card-img-top"
@@ -202,7 +238,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div className="card" style={{ width: "350px" }}>
+        <div className="card"  >
           <img
             src={require("../images/notes.PNG").default}
             className="card-img-top"
@@ -233,7 +269,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card" style={{ width: "350px" }}>
+        <div className="card"  >
           <img
             src={require("../images/calc.PNG").default}
             className="card-img-top"
@@ -264,7 +300,10 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div className="card" style={{ width: "350px" }}>
+        </Rotate>
+        <Rotate bottom right>
+
+        <div className="card"  >
           <img
             src={require("../images/todo.PNG").default}
             className="card-img-top"
@@ -296,7 +335,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div className="card" style={{ width: "350px" }}>
+        <div className="card"  >
           <img
             src={require("../images/clock.PNG").default}
             className="card-img-top"
@@ -327,6 +366,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
+        </Rotate>
       </div>
     </>
   );

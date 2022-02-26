@@ -23,7 +23,7 @@ const About = () => {
                         <p><i className="fas fa-arrow-right"></i><strong> Date Of Birth : </strong>10/02/2002</p>
                     </li>
                     <li>
-                        <p><i className="fas fa-arrow-right"></i><strong> Age : </strong>19</p>
+                        <p><i className="fas fa-arrow-right"></i><strong> Age : </strong>20</p>
                     </li>
                     <li>
                         <p><i className="fas fa-arrow-right"></i><strong> Degree : </strong>Bachelor</p>
