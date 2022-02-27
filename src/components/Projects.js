@@ -22,7 +22,7 @@ const Projects = ({isDarkMode}) => {
    
       <div data-aos="fade-right" className="card">
           <img
-            src={require("../images/vflix.png").default}
+            src={require("../images/vflix.png")}
             className="card-img-top"
             alt="..."
           />
@@ -52,7 +52,7 @@ const Projects = ({isDarkMode}) => {
         </div>
         <div data-aos="fade-up" className="card">
           <img
-            src={require("../images/dictionary.png").default}
+            src={require("../images/dictionary.png")}
             className="card-img-top"
             alt="..."
           />
@@ -82,7 +82,7 @@ const Projects = ({isDarkMode}) => {
         </div>
         <div data-aos="fade-left" className="card">
           <img
-            src={require("../images/newsApp.png").default}
+            src={require("../images/newsApp.png")}
             className="card-img-top"
             alt="..."
           />
@@ -115,7 +115,7 @@ const Projects = ({isDarkMode}) => {
 
         <div data-aos="fade-left" className="card"  >
           <img
-            src={require("../images/tictactoe.png").default}
+            src={require("../images/tictactoe.png")}
             className="card-img-top"
             alt="..."
           />
@@ -147,7 +147,7 @@ const Projects = ({isDarkMode}) => {
 
         <div data-aos="fade-down" className="card"  >
           <img
-            src={require("../images/music.PNG").default}
+            src={require("../images/music.PNG")}
             className="card-img-top"
             alt="..."
           />
@@ -179,7 +179,7 @@ const Projects = ({isDarkMode}) => {
         </div>
         <div data-aos="fade-right" className="card"  >
           <img
-            src={require("../images/weather.PNG").default}
+            src={require("../images/weather.PNG")}
             className="card-img-top"
             alt="..."
           />
@@ -212,7 +212,7 @@ const Projects = ({isDarkMode}) => {
 
         <div data-aos="fade-up" className="card"  >
           <img
-            src={require("../images/rps.PNG").default}
+            src={require("../images/rps.PNG")}
             className="card-img-top"
             alt="..."
           />
@@ -244,7 +244,7 @@ const Projects = ({isDarkMode}) => {
 
         <div data-aos="fade-left" className="card"  >
           <img
-            src={require("../images/notes.PNG").default}
+            src={require("../images/notes.PNG")}
             className="card-img-top"
             alt="..."
           />
@@ -275,7 +275,7 @@ const Projects = ({isDarkMode}) => {
         </div>
         <div data-aos="flip-right" className="card"  >
           <img
-            src={require("../images/calc.PNG").default}
+            src={require("../images/calc.PNG")}
             className="card-img-top"
             alt="..."
           />
@@ -308,7 +308,7 @@ const Projects = ({isDarkMode}) => {
 
         <div data-aos="flip-left"  className="card"  >
           <img
-            src={require("../images/todo.PNG").default}
+            src={require("../images/todo.PNG")}
             className="card-img-top"
             alt="..."
           />
@@ -340,7 +340,7 @@ const Projects = ({isDarkMode}) => {
 
         <div data-aos="fade-right"  className="card"  >
           <img
-            src={require("../images/clock.PNG").default}
+            src={require("../images/clock.PNG")}
             className="card-img-top"
             alt="..."
           />

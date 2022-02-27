@@ -24,62 +24,62 @@ const Skills = ({isDarkMode}) => {
         <img
         data-aos="fade-up"
           className="simg"
-          src={require("../images/html.png").default}
+          src={require("../images/html.png")}
           alt=""
         />
         <img
         data-aos="fade-down"
           className="simg"
-          src={require("../images/css.png").default}
+          src={require("../images/css.png")}
           alt=""
         />
         <img
         data-aos="fade-right"
           className="simg"
-          src={require("../images/js.png").default}
+          src={require("../images/js.png")}
           alt=""
         />
         <img
          data-aos="fade-left"
           className="simg"
-          src={require("../images/c++.png").default}
+          src={require("../images/c++.png")}
           alt=""
         />
         <img
         data-aos="fade-up-right"
           className="simg"
-          src={require("../images/bootstrap.png").default}
+          src={require("../images/bootstrap.png")}
           alt=""
         />
         <img
         data-aos="fade-up-left"
           className="simg"
-          src={require("../images/py.png").default}
+          src={require("../images/py.png")}
           alt=""
         />
         <img
         data-aos="fade-down-right"
           className="simg"
-          src={require("../images/react.png").default}
+          src={require("../images/react.png")}
           alt=""
         />
-        <img data-aos="fade-down-left" className="simg" src={require("../images/c.png").default} alt="" />
+        <img data-aos="fade-down-left" className="simg" src={require("../images/c.png")} alt="" />
         <img
         data-aos="flip-left"
           className="simg"
-          src={require("../images/ps.png").default}
+          src={require("../images/ps.png")}
           alt=""
         />
         <img
         data-aos="flip-right"
           className="simg"
-          src={require("../images/ms.png").default}
+          src={require("../images/ms.png")}
           alt=""
         />
         <img
         data-aos="flip-up"
           className="simg"
-          src={require("../images/mongo.png").default}
+          src={require("../images/mongo.png")}
           alt=""
         />
       </div>
