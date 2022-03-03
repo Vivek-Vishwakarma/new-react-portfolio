@@ -17,7 +17,6 @@ const Skills = ({isDarkMode}) => {
   
   return (
     <>
-    
       <Heading heading={"Skills"} />
 
       <div id="skills" className="sdiv">

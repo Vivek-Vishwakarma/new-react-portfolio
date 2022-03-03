@@ -305,7 +305,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-
+{/* 
         <div data-aos="flip-left"  className="card"  >
           <img
             src={require("../images/todo.PNG")}
@@ -368,7 +368,7 @@ const Projects = ({isDarkMode}) => {
               View
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
