@@ -20,10 +20,10 @@ const About = () => {
                     <img src={me} alt="profile" />
                 </div>
                 <div className="about-text">
-                    <h2 data-aos="fade-left">Student at Atharva College Of Engineering</h2>
+                    <h2 data-aos="fade-up">Student at Atharva College Of Engineering</h2>
                     <p data-aos="fade-right">Prefinal (2019 - 2023) EXTC branch. <br /> HSC form TP Bhatia College Of Science.</p>
                     <Button url="https://www.canva.com/design/DAElGBKBrs8/hbZaJk8xts0L27Yr2ePl0w/view?utm_content=DAElGBKBrs8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" text="Resume &darr;"/>
-                <div data-aos="flip-left" className="info">
+                <div data-aos="flip-down" className="info">
                 <ul>
                     <li>
                         <p><i className="fas fa-arrow-right"></i><strong> Date Of Birth : </strong>10/02/2002</p>

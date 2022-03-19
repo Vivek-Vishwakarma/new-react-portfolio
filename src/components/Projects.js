@@ -80,7 +80,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div data-aos="fade-left" className="card">
+        <div data-aos="fade-down" className="card">
           <img
             src={require("../images/newsApp.png")}
             className="card-img-top"
@@ -113,7 +113,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div data-aos="fade-left" className="card"  >
+        <div data-aos="fade-up" className="card"  >
           <img
             src={require("../images/tictactoe.png")}
             className="card-img-top"
@@ -242,7 +242,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div data-aos="fade-left" className="card"  >
+        <div data-aos="fade-right" className="card"  >
           <img
             src={require("../images/notes.PNG")}
             className="card-img-top"

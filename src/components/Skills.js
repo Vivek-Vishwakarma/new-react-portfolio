@@ -1,82 +1,85 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Heading from "./Heading";
 import "../css/skill.css";
-import AOS from 'aos';
-const Skills = ({isDarkMode}) => {
-  document.querySelectorAll('.progress-bar').forEach(element => {
-    element.style.background = isDarkMode ? "black" : "white"
-    
-  })
-  document.querySelectorAll('.progress-bar-percent').forEach(element => {
-    element.style.color = isDarkMode ? "white" : "black"
-    
-  })
+import AOS from "aos";
+const Skills = ({ isDarkMode }) => {
+  document.querySelectorAll(".progress-bar").forEach((element) => {
+    element.style.background = isDarkMode ? "black" : "white";
+  });
+  document.querySelectorAll(".progress-bar-percent").forEach((element) => {
+    element.style.color = isDarkMode ? "white" : "black";
+  });
   useEffect(() => {
-    AOS.init({duration : 2000})
-  }, [])
-  
+    AOS.init({ duration: 2000 });
+  }, []);
+
   return (
     <>
       <Heading heading={"Skills"} />
 
       <div id="skills" className="sdiv">
         <img
-        data-aos="fade-up"
+          data-aos="fade-up"
           className="simg"
           src={require("../images/html.png")}
           alt=""
         />
         <img
-        data-aos="fade-down"
+          data-aos="fade-down"
           className="simg"
           src={require("../images/css.png")}
           alt=""
         />
         <img
-        data-aos="fade-right"
+          data-aos="fade-right"
           className="simg"
           src={require("../images/js.png")}
           alt=""
         />
         <img
-         data-aos="fade-left"
+          data-aos="fade-up"
           className="simg"
           src={require("../images/c++.png")}
           alt=""
         />
         <img
-        data-aos="fade-up-right"
+          data-aos="fade-up-right"
           className="simg"
           src={require("../images/bootstrap.png")}
           alt=""
         />
         <img
-        data-aos="fade-up-left"
+          data-aos="fade-up-right"
           className="simg"
           src={require("../images/py.png")}
           alt=""
         />
         <img
-        data-aos="fade-down-right"
+          data-aos="fade-down-right"
           className="simg"
           src={require("../images/react.png")}
           alt=""
         />
-        <img data-aos="fade-down-left" className="simg" src={require("../images/c.png")} alt="" />
         <img
-        data-aos="flip-left"
+          data-aos="fade-down-down"
+          className="simg"
+          src={require("../images/c.png")}
+          alt=""
+        />
+        <img
+          data-aos="flip-left"
           className="simg"
           src={require("../images/ps.png")}
           alt=""
         />
         <img
-        data-aos="flip-right"
+          data-aos="flip-right"
           className="simg"
           src={require("../images/ms.png")}
           alt=""
         />
         <img
-        data-aos="flip-up"
+          data-aos="flip-up"
           className="simg"
           src={require("../images/mongo.png")}
           alt=""
