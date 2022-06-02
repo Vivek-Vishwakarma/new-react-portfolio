@@ -1,26 +1,54 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import Heading from "./Heading";
 import ScrollToTop from "react-scroll-to-top";
 import "../css/project.css";
-import AOS from 'aos';
+import AOS from "aos";
 
 // import "aos/dist/aos.css";
-const Projects = ({isDarkMode}) => {
-  document.querySelectorAll(".card").forEach(element => {
-    element.style.background = isDarkMode ? "black" : "white"
-  })
+const Projects = ({ isDarkMode }) => {
+  document.querySelectorAll(".card").forEach((element) => {
+    element.style.background = isDarkMode ? "black" : "white";
+  });
   useEffect(() => {
-    AOS.init({duration : 2000})
+    AOS.init({ duration: 2000 });
+  }, []);
 
-  }, [])
-  
   return (
     <>
       <Heading heading={"Projects"} />
       <ScrollToTop smooth />
-      <div id="projects"  className="container">
-   
-      <div data-aos="fade-right" className="card">
+      <div id="projects" className="container">
+        <div data-aos="fade-right" className="card">
+          <img
+            src={require("../images/mern-profile.png")}
+            className="card-img-top"
+            alt="..."
+          />
+          <div className="card-body text-center">
+            <h5 className="card-title">Mern Stack Profile app</h5>
+            <p className="tech">JavaScript, React, Node, React BootStrap, Express, MongoDB</p>
+            <p className="card-text">
+              It's a MERN stack app which have login system and feature like password hasing using bycrypt js, authentication using jwt and Image upload using multer. It is easy to use and user can make multiple profiles in same ID.
+            </p>
+            <a
+              href="https://github.com/Vivek-Vishwakarma/mern-profile-app"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-success"
+            >
+              Github
+            </a>
+            <a
+              href="https://mernstack-profile-app.herokuapp.com/login"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-primary"
+            >
+              View
+            </a>
+          </div>
+        </div>
+        <div data-aos="fade-right" className="card">
           <img
             src={require("../images/vflix.png")}
             className="card-img-top"
@@ -30,7 +58,18 @@ const Projects = ({isDarkMode}) => {
             <h5 className="card-title">Vflix</h5>
             <p className="tech">JavaScript, React, API, Material UI</p>
             <p className="card-text">
-              This is Vflix a movie db app. This fetch data from TMDB API and show the results. App have feature filter, pagination, responsive design, search, etc. I also made app version of this website using react native <a style={{margin : 0, padding : 0, color: "#0d6efd"}} href="https://github.com/Vivek-Vishwakarma/react-native-vflix" rel="noreferrer" target="_blank">click here to check the github repo.</a>
+              This is Vflix a movie db app. This fetch data from TMDB API and
+              show the results. App have feature filter, pagination, responsive
+              design, search, etc. I also made app version of this website using
+              react native{" "}
+              <a
+                style={{ margin: 0, padding: 0, color: "#0d6efd" }}
+                href="https://github.com/Vivek-Vishwakarma/react-native-vflix"
+                rel="noreferrer"
+                target="_blank"
+              >
+                click here to check the github repo.
+              </a>
             </p>
             <a
               href="https://github.com/Vivek-Vishwakarma/vflix"
@@ -60,7 +99,9 @@ const Projects = ({isDarkMode}) => {
             <h5 className="card-title">React-Dictionary</h5>
             <p className="tech">JavaScript, React, API, CSS</p>
             <p className="card-text">
-              Dictionary all to find meaning of words. I have also added pronouncation of the words. It don't have meaning and pronouncation of all words.
+              Dictionary all to find meaning of words. I have also added
+              pronouncation of the words. It don't have meaning and
+              pronouncation of all words.
             </p>
             <a
               href="https://github.com/Vivek-Vishwakarma/react-dictionary"
@@ -113,7 +154,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div data-aos="fade-up" className="card"  >
+        <div data-aos="fade-up" className="card">
           <img
             src={require("../images/tictactoe.png")}
             className="card-img-top"
@@ -145,7 +186,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div data-aos="fade-down" className="card"  >
+        <div data-aos="fade-down" className="card">
           <img
             src={require("../images/music.PNG")}
             className="card-img-top"
@@ -177,7 +218,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div data-aos="fade-right" className="card"  >
+        <div data-aos="fade-right" className="card">
           <img
             src={require("../images/weather.PNG")}
             className="card-img-top"
@@ -208,9 +249,8 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
- 
 
-        <div data-aos="fade-up" className="card"  >
+        <div data-aos="fade-up" className="card">
           <img
             src={require("../images/rps.PNG")}
             className="card-img-top"
@@ -242,7 +282,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-        <div data-aos="fade-right" className="card"  >
+        <div data-aos="fade-right" className="card">
           <img
             src={require("../images/notes.PNG")}
             className="card-img-top"
@@ -273,7 +313,7 @@ const Projects = ({isDarkMode}) => {
             </a>
           </div>
         </div>
-        <div data-aos="flip-right" className="card"  >
+        <div data-aos="flip-right" className="card">
           <img
             src={require("../images/calc.PNG")}
             className="card-img-top"
@@ -305,7 +345,7 @@ const Projects = ({isDarkMode}) => {
           </div>
         </div>
 
-{/* 
+        {/* 
         <div data-aos="flip-left"  className="card"  >
           <img
             src={require("../images/todo.PNG")}
