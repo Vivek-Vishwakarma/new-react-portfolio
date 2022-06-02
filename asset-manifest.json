@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/new-react-portfolio/static/css/main.76b6fba1.css",
-    "main.js": "/new-react-portfolio/static/js/main.1248d054.js",
+    "main.js": "/new-react-portfolio/static/js/main.415ae31f.js",
     "static/media/me.png": "/new-react-portfolio/static/media/me.586a0310de29a9d245b3.png",
     "static/media/vflix.png": "/new-react-portfolio/static/media/vflix.96d0d57e41f5824986ae.png",
     "static/media/newsApp.png": "/new-react-portfolio/static/media/newsApp.f4d5eb1e34fac771b7a4.png",
@@ -12,6 +12,7 @@
     "static/media/mongo.png": "/new-react-portfolio/static/media/mongo.a92cc370ddbacfa03d75.png",
     "static/media/rps.PNG": "/new-react-portfolio/static/media/rps.967d15d442e213dcddf7.PNG",
     "static/media/bg.svg": "/new-react-portfolio/static/media/bg.6f8f9dad012c1440f97c347142254d66.svg",
+    "static/media/mern-profile.png": "/new-react-portfolio/static/media/mern-profile.de0a821bd70898b200a5.png",
     "static/media/about.PNG": "/new-react-portfolio/static/media/about.defc79958b4ba44abeab.PNG",
     "static/media/music.PNG": "/new-react-portfolio/static/media/music.1e8848dddd61e74089ef.PNG",
     "static/media/tictactoe.png": "/new-react-portfolio/static/media/tictactoe.25d29cbfec68974d9b9e.png",
@@ -24,10 +25,10 @@
     "static/media/html.png": "/new-react-portfolio/static/media/html.ff3cf75e3b7cbb4ea77c.png",
     "index.html": "/new-react-portfolio/index.html",
     "main.76b6fba1.css.map": "/new-react-portfolio/static/css/main.76b6fba1.css.map",
-    "main.1248d054.js.map": "/new-react-portfolio/static/js/main.1248d054.js.map"
+    "main.415ae31f.js.map": "/new-react-portfolio/static/js/main.415ae31f.js.map"
   },
   "entrypoints": [
     "static/css/main.76b6fba1.css",
-    "static/js/main.1248d054.js"
+    "static/js/main.415ae31f.js"
   ]
 }
